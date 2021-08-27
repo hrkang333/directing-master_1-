@@ -171,7 +171,7 @@ ol {
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 13px 30px 12px;
-	background: #f03250;
+	background: #D958A0;
 	border: none;
 }
 
@@ -3209,6 +3209,8 @@ login
 	padding: 13px 42px 12px;
 }
 
+
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1400px) and (max-width: 1920px) {
@@ -3533,3 +3535,8 @@ login
 		margin-bottom: 5px;
 	}
 }
+
+
+/* 싱글캣  */
+
+
