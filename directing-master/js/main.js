@@ -9,6 +9,8 @@
 
 'use strict';
 
+
+
 (function ($) {
 
     /*------------------
@@ -28,13 +30,13 @@
     });
 
     /*------------------
-		Navigation
-	--------------------*/
+        Navigation
+    --------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
-    
+
     /*--------------------------
     Testimonial Slider
     ----------------------------*/
@@ -68,8 +70,8 @@
     });
 
     /*-----------------------
-		Price Range Radius
-	------------------------ */
+        Price Range Radius
+    ------------------------ */
     var rangeSlider = $(".price-range-radius"),
         radius = $("#radius");
     rangeSlider.slider({
@@ -84,11 +86,11 @@
     radius.val(rangeSlider.slider("value") + 'km');
 
     /*-----------------------
-		Price Range Slider
-	------------------------ */
+        Price Range Slider
+    ------------------------ */
     var rangeSliderPrice = $(".price-range"),
         minamount = $("#minamount");
-        rangeSliderPrice.slider({
+    rangeSliderPrice.slider({
         range: 'min',
         min: 0,
         max: 80,
@@ -105,8 +107,8 @@
     $("select").niceSelect();
 
     /*------------------
-		Single Product
-	--------------------*/
+        Single Product
+    --------------------*/
     $('.listing__details__gallery__slider img').on('click', function () {
 
         var imgurl = $(this).data('imgbigurl');
@@ -119,8 +121,8 @@
     });
 
     /*-------------------
-		Quantity change
-	--------------------- */
+        Quantity change
+    --------------------- */
     $(".nice-scroll").niceScroll({
         cursorcolor: "#a8a8a8",
         cursorwidth: "8px",
@@ -140,8 +142,8 @@
     });
 
     /*------------------
-		Barfiller
-	--------------------*/
+        Barfiller
+    --------------------*/
     $('#bar1').barfiller({
         barColor: "#f03250",
     });
@@ -163,10 +165,28 @@
     });
 
     /*------------------
-		Magnific
-	--------------------*/
+        Magnific
+    --------------------*/
     $('.video-popup').magnificPopup({
         type: 'iframe'
-      });
+    });
 
 })(jQuery);
+
+
+
+/* 포토스틱 제이쿼리 function */
+
+jQuery(document).ready(function ($) {
+
+    // PhotoStack Initi
+    if ($('#photostack-1').length) {
+        new Photostack(document.getElementById('photostack-1'), {
+            callback: function (item) {
+                //console.log(item)
+            }
+        });
+    }
+
+
+});
