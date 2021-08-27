@@ -24,6 +24,28 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!--토글용-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+    <style>
+        .dropdown_myplan{
+            position: relative;
+            z-index: 999999;
+        }
+        .header__logo_myplan{
+            padding-top: 25px;
+            padding-top: 10px;
+        }
+        .planInput{
+            margin-bottom: 20px;
+            width: 100%;
+            resize: none;
+        }
+    </style>
 </head>
 
 <body class="ov-hid">
@@ -37,8 +59,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
+                    <div class="header__logo_myplan">
+                        <a href="./index.html"><img src="img/Logo_D_1.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9">
@@ -74,10 +96,47 @@
 
     <!-- Filter Begin -->
     <div class="filter nice-scroll">
-        <div class="filter__title">
-            <h5><i class="fa fa-filter"></i> Filter</h5>
-        </div>
-        <div class="filter__search">
+        <form action="">
+            <div class="filter__title">
+                <h5>일정 제목</h5>
+            </div>
+            <div>
+                <input type="text" class="planInput" name="planTitle">
+            </div>
+
+            <div class="filter__title">
+                <h5>일정 날짜</h5>
+            </div>
+            <div>
+                <input type="text" class="planInput" name="planDate">
+            </div>
+
+            <div class="filter__title">
+                <h5>메모</h5>
+            </div>
+            <div>
+                <textarea class="planInput" name="planMemo" id="" cols="20" rows="8"></textarea>
+            </div>
+
+            <div class="filter__title">
+                <h5>위치 선택</h5>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <!-- <div class="filter__search">
             <input type="text">
         </div>
         <div class="filter__select">
@@ -156,10 +215,9 @@
                 <input type="checkbox" id="hd">
                 <span class="checkmark"></span>
             </label>
-        </div>
+        </div> -->
         <div class="filter__btns">
-            <button type="submit">Filter Results</button>
-            <button type="submit" class="filter__reset">Reset All</button>
+            <button type="submit">일정 저장하기</button>
         </div>
     </div>
     <!-- Filter End -->
@@ -168,10 +226,44 @@
     <section class="listing nice-scroll">
         <div class="listing__text__top">
             <div class="listing__text__top__left">
-                <h5>Restaurants</h5>
-                <span>18 Results Found</span>
+                <a href="#"><h5>음식</h5></a>
+                <a href="#"><h5>활동</h5></a>
+                <!-- <div class="dropdown dropdown_myplan">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div> -->
+
             </div>
-            <div class="listing__text__top__right">Nearby <i class="fa fa-sort-amount-asc"></i></div>
+            <!-- <div class="listing__text__top__right">Nearby <i class="fa fa-sort-amount-asc"></i></div> -->
         </div>
         <div class="listing__list">
             <div class="listing__item">
