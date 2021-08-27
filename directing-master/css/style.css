@@ -1672,6 +1672,8 @@ login
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
 }
 
 .listing__item__text__inside h5 {
@@ -1863,6 +1865,33 @@ login
 /*---------------------
   Listing Details
 -----------------------*/
+
+
+
+/* 위치 */
+.loca_1{
+	float: left;
+	margin-left: 20%;
+	text-align: center;
+}
+
+/* 날짜 */
+.date_1{ 
+	float: right;
+	margin-right: 20%;
+	text-align: center;
+	
+}
+
+.result_1{
+	text-align: center;
+	padding: 10%;
+}
+
+.total_btn{
+	text-align: center;
+}
+
 
 .listing__details__about {
 	margin-bottom: 35px;
@@ -2174,6 +2203,16 @@ login
 	border-radius: 2px;
 	padding: 13px 38px 12px;
 }
+
+
+/* 
+	adminPlan_detail
+*/
+
+
+
+
+
 
 /*---------------------
   Listing Sidebar
