@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min333.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="css/flaticon.css" type="text/css">
@@ -23,19 +24,20 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
+    <link rel="stylesheet" href="css/style333.css" type="text/css">
        
     <!-- login Section -->
     <!-- 첫 번째 -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- 두 번째 탬플릿 -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <!------ Include the above in your HEAD tag ---------->
 
     <!--CSS-->
@@ -56,7 +58,6 @@
 
     <!-- Header Section Begin -->
     <header class="header" id="header">
-        <div class="inner">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
@@ -68,7 +69,7 @@
                         <div class="header__nav">
                             <nav class="header__menu mobile-menu">
                                 <ul>
-                                
+                                 
                                     
                                     <li><a href="#">일정플래너</a>
                                         
@@ -81,21 +82,20 @@
                                     </li>
                                     <li><a href="#">FAQ</a></li>
                                     <li><a href="./blog.html">커뮤니티</a></li>
-                                
-                                    <li><a href="#">로그인</a></li>
-                                    <li><a href="#">회원가입</a></li>
+                                   
+                                    <li><a href="./login.html">로그인</a></li>
+                                    <li><a href="./signUp.html">회원가입</a></li>
                                 </ul>
                             </nav>
                             <div class="header__menu__right">
-                            
+                               
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="mobile-menu-wrap"></div>
             </div>
-        </div>
-    </header>
+        </header>
         <script>
         $(function(){
         var $header = $('header'); //헤더를 변수에 넣기
@@ -176,20 +176,42 @@
                                                     <button type="submit" class="vamos_mudar_um_pouco" title="Entrar">로그인</button>
                                                     <!-- <i class="fas fa-sign-in-alt fa-2x"></i> -->
                                                 </div>
-                                                <div class="findIP">
-                                                    <p class="help">아이디나 비밀번호를 잊으셨다면?</p>
-                                                    <a href="find.html" class="find">ID/PW 찾기</a>
+                                                <div class="pp">
+                                                    <div class="left">
+                                                        <p class="help">아이디나 비밀번호를 잊으셨다면?</p>
+                                                        <a href="find.html" class="linkA">ID/PW 찾기</a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <p class="help">어디어디 회원이 아니라면?</p>
+                                                        <a href="signUp.html" class="linkB">회원가입</a>
+                                                    </div>
                                                 </div>
-                                                <div class="signUp">
-                                                    <p class="help">어디어디 회원이 아니라면?</p>
-                                                    <a href="signUp.html" class="signUp">회원가입</a>
-                                                </div>
-                                                <!--test-->
                                             </div>
+
+                                            
                                         </form>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-lg-3"></div>
+                                <div class="container login-container">
+                                    <div class="row">
+                                        <div class="col-md-6 login-form-1">
+                                            <h3>Login for Form 1</h3>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div style="float: left;"><label>아이디</label></div><div style="float: right;"><input type="text" class="form-control" placeholder="Your Email *" value=""; /></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" class="btnSubmit" value="Login" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
