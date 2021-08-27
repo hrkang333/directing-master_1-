@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min333.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="css/flaticon.css" type="text/css">
@@ -23,7 +24,30 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
+    <link rel="stylesheet" href="css/style333.css" type="text/css">
+       
+    <!-- login Section -->
+    <!-- 첫 번째 -->
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 두 번째 탬플릿 -->
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!------ Include the above in your HEAD tag ---------->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,85 +57,102 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+    <header class="header" id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <div class="header__nav">
-                        <nav class="header__menu mobile-menu">
-                            <ul>
-                             
-                                
-                                <li><a href="#">일정플래너</a>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="header__nav">
+                            <nav class="header__menu mobile-menu">
+                                <ul>
+                                 
                                     
-                                    <ul class="dropdown">
-                                        <li><a href="./about.html">마음대로일정</a></li>
-                                        <li><a href="./listing-details.html">추천일정</a></li>
-                                        <li><a href="./blog-details.html">일정보관함</a></li>
+                                    <li><a href="#">일정플래너</a>
                                         
-                                    </ul>
-                                </li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="./blog.html">커뮤니티</a></li>
+                                        <ul class="dropdown">
+                                            <li><a href="./about.html">마음대로일정</a></li>
+                                            <li><a href="./listing-details.html">추천일정</a></li>
+                                            <li><a href="./blog-details.html">일정보관함</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="./blog.html">커뮤니티</a></li>
+                                   
+                                    <li><a href="./login.html">로그인</a></li>
+                                    <li><a href="./signUp.html">회원가입</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__menu__right">
                                
-                                <li><a href="./login.html">로그인</a></li>
-                                <li><a href="./signUp.html">회원가입</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__menu__right">
-                           
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div id="mobile-menu-wrap"></div>
             </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
-    </header>
+        </header>
+        <script>
+        $(function(){
+        var $header = $('header'); //헤더를 변수에 넣기
+        var $page = $('.page-start'); //색상이 변할 부분
+        var $window = $(window);
+        var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+        
+        $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
+            pageOffsetTop = $page.offset().top;
+        });
+        
+        $window.on('scroll', function(){ //스크롤시
+            var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+            $header.toggleClass('down', scrolled); //클래스 토글
+        });
+        });
+        
+            </script>
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero set-bg" data-setbg="img/hero/hero-bg.gif">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hero__text">
-                        <div class="section-title">
-                            <h2>어디어디?!</h2>
-                           
-                        </div>
-                        <div class="hero__search__form">
-                            <form action="#">
-                                <input type="text" placeholder="Search...">
-                                <div class="select__option">
-                                    <select>
-                                        <option value="">카테고리</option>
-                                    </select>
-                                </div>
-                                <div class="select__option">
-                                    <select>
-                                        <option value="">장소 선택</option>
-                                    </select>
-                                </div>
-                                <button type="submit">검색하기</button>
-                            </form>
-                        </div>
 
-                       
+        <section class="hero set-bg" data-setbg="img/gyeongbokgung-palace.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hero__text">
+                            <div class="section-title">
+                                <h2>어디어디?!</h2>
+                            
+                            </div>
+
+                        
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!-- Hero Section End -->
 
 
-   
+    <!-- login -->
+    <!------ Include the above in your HEAD tag ---------->
+    <section class="page-start">
+        <section class="login">
+            <div class="container">
+                <div class="sidenav">
+                <div class="login-main-text">
+                    <h2>Eodi Eodi<br> Login Page</h2>
+                    <p>Login from here to access.</p>
+                </div>
+                </div>
+                
+            </div>
+        </section>
 
+    </section>
     <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container">
