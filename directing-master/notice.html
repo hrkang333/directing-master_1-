@@ -7,7 +7,7 @@
     <meta name="keywords" content="Directing, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> 추천일정 상세페이지 </title>
+    <title> 커뮤니티 관리 </title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -29,6 +29,18 @@
 
 
 </head>
+
+
+<style>
+    ul{
+        list-style: none;
+    }
+
+    .new_noti_update{
+       text-align: center;
+    }
+
+</style>
     
 <body>
 
@@ -87,10 +99,10 @@
                     <div class="listing__hero__option">
                        
                         <div class="listing__hero__text">
-                          <h2>추천 상세페이지</h2> 
+                          <h2>커뮤니티 관리</h2> 
                           <div class="breadcrumb__option">
                             <a href="./index.html"><i class="fa fa-home"></i> 홈</a>
-                            <span>추천일정</span>
+                            <span>커뮤니티 관리</span>
                         </div>
                         </div>
                     </div>
@@ -99,11 +111,163 @@
             </div>
         </div>
     </section>
-
-
-
-
 </div>
+
+
+<!-- 공지사항 수정 삭제 할 수 있는 곳  -->
+
+
+<section class="page-start">
+
+<div class="content">
+    
+    <div class="container">
+
+      <div class="table-responsive">
+
+        <table class="table custom-table">
+          <thead>
+            <tr>
+              <th scope="col">
+                <label class="control control--checkbox">
+                  <input type="checkbox" class="js-check-all"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <th scope="col">No.</th>
+              <th scope="col">제목</th>
+              <th scope="col">내용</th>
+              <th scope="col">조회수</th>
+              <th scope="col">수정</th>
+              <th scope="col">삭제</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <td>
+                1
+              </td>
+              <td>[공지] 안녕하세요 여러분 </td>
+              <td>
+                여기에 뭘 적으면 내용이 들어옵니다 
+                <!-- <small class="d-block">ar farF away, behind the word mountains</small> -->
+              </td>
+              <td>100</td>
+        
+              <td>
+
+                <ul class="">
+                  <li>
+                    <a href="#">
+                        <a href=""><button type="button" class="btn btn-dark">수정</button></a>
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <a href="#">
+                    <a href=""><button type="button" class="btn btn-dark">삭제</button></a>
+                </a>
+              </td>
+
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <td>2</td>
+              <td>[공지]새로운 공지사항 </td>
+              <td>
+                넘 여려운 공지사항이넵...
+              </td>
+              <td>10</td>
+         
+              <td>
+                <ul class="">
+                  <li>
+                    <a href="#">
+                        <a href=""><button type="button" class="btn btn-dark">수정</button></a>
+                    </a>
+                  </li>
+                </ul>
+              </td>
+
+              <td>
+                <a href="#">
+                    <a href=""><button type="button" class="btn btn-dark">삭제</button></a>
+                </a>
+              </td>
+
+            </tr>
+
+            <tr>
+              <th scope="row">
+                <label class="control control--checkbox">
+                  <input type="checkbox"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </th>
+              <td>3</td>
+              <td>[공지]개인정보 이용약관..</td>
+              <td>
+                넘나 어려운것..
+            </td>
+              <td>0</td>
+              <td>
+                <ul class="">
+                  <li>
+                    <a href="#">
+                        <a href=""><button type="button" class="btn btn-dark">수정</button></a>
+                    </a>
+                  </li>
+                </ul>
+              </td>
+           
+              <td>
+                <a href="#">
+                    <a href=""><button type="button" class="btn btn-dark">삭제</button></a>
+                </a>
+              </td>
+          
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+
+<!--공지사항 리스트 끝  -->
+
+
+<!-- 새로운 공지사항 작성하러가는 버튼  -->
+
+    <div class="new_noti_update">
+        <a href="./notice_update.html"><button type="button" class="btn btn-dark">새 공지 등록하기 </button></a>
+
+    </div>
+
+
+</section>
+
+
+
+
+
 
 
     <!-- 하단의 footer -->
@@ -182,4 +346,55 @@
     <script src="js/main.js"></script>
 
 </body>
+
+<script>
+    $(function() {
+    // 체크박스 전체 선택하는 것 
+    $('.js-check-all').on('click', function() {
+    
+        if ( $(this).prop('checked') ) {
+            $('th input[type="checkbox"]').each(function() {
+                $(this).prop('checked', true);
+          $(this).closest('tr').addClass('active');
+            })
+        } else {
+            $('th input[type="checkbox"]').each(function() {
+                $(this).prop('checked', false);
+          $(this).closest('tr').removeClass('active');
+            })
+        }
+    
+    });
+    
+    $('th[scope="row"] input[type="checkbox"]').on('click', function () {
+            if ($(this).closest('tr').hasClass('active')) {
+                $(this).closest('tr').removeClass('active');
+            } else {
+                $(this).closest('tr').addClass('active');
+            }
+        });
+
+    });
+
+    </script>
+
+<script>
+    $(function () {
+        var $header = $('header'); //헤더를 변수에 넣기
+        var $page = $('.page-start'); //색상이 변할 부분
+        var $window = $(window);
+        var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+
+        $window.resize(function () { //반응형을 대비하여 리사이즈시 top값을 다시 계산
+            pageOffsetTop = $page.offset().top;
+        });
+
+        $window.on('scroll', function () { //스크롤시
+            var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+            $header.toggleClass('down', scrolled); //클래스 토글
+        });
+    });
+
+</script>
+
 </html>

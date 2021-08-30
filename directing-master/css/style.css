@@ -578,7 +578,7 @@ login
 }
 .help{
 	text-align: center;
-	color: #636363;
+	color: #241e1e;
 }
 .pp{
 	width: 100%;
@@ -1952,15 +1952,23 @@ login
 /* 위치 */
 .loca_1{
 	float: left;
-	margin-left: 20%;
+	margin-left: 10%;
 	text-align: center;
+	border: 1px solid pink;
+	background-color: #D958A0;
+	padding: 5%;
+	border-radius: 2em;
 }
 
 /* 날짜 */
 .date_1{ 
 	float: right;
-	margin-right: 20%;
+	margin-right: 10%;
 	text-align: center;
+	border: 1px solid pink;
+	background-color: #D958A0;
+	padding: 5%;
+	border-radius: 2em;
 	
 }
 
@@ -2289,6 +2297,21 @@ login
 /* 
 	adminPlan_detail
 */
+
+.middle_main{
+
+	text-align: center;
+	align-items: center;
+}
+
+.start_1{
+	float: left;
+	padding-left: 20%;
+}
+.start_2{
+	float: right;
+	margin-right: 20%;
+}
 
 
 
@@ -2995,7 +3018,7 @@ login
 	border-radius: 2px;
 	padding: 10px 10px 8px 16px;
 	width: calc(25% - 34px);
-	float: left;
+	
 	margin-right: 34px;
 	margin-bottom: 25px;
 }
