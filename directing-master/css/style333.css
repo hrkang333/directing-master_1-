@@ -609,6 +609,16 @@ login
 /*-------------------------
  Find
 ----------------------------*/
+.findrow{
+	display: flex;
+	flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+	width: 90%;
+    height: 80%;
+	padding-left: 10%;
+}
+
 .login-container{
     margin-top: 5%;
     margin-bottom: 5%;
@@ -669,10 +679,20 @@ login
 /*------------------
 Sign Up
 -------------------*/
-body{ 
-    margin-top:40px; 
+object{
+	padding-left: 60px;
+    width: 80%;
+    height: 800px;
+	margin-left: 10%;
+}
+/*--------SignUpForm.html*/
+.tt{
+	text-align: center;
 }
 
+.cover{
+    margin-top:40px; 
+}
 .stepwizard-step p {
     margin-top: 10px;
 }
@@ -719,7 +739,49 @@ body{
   line-height: 1.428571429;
   border-radius: 15px;
 }
+.panel-heading{
+	background-color: #D958A0;
+}
 
+
+.nextBtn{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    margin: 0;
+    -webkit-appearance: button;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    user-select: none;
+    float: right!important;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+    background-color: #D958A0 !important;
+}
+
+.product_view .modal-dialog{max-width: 800px; width: 100%;}
+.pre-cost{text-decoration: line-through; color: #a5a5a5;}
+.space-ten{padding: 10px 0;}
+#contt{
+	max-width: 80%;
+	 margin-left: 10%;
+}
 /*---------------------
   Hero
 -----------------------*/
