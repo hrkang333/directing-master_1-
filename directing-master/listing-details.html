@@ -58,37 +58,37 @@
         </div>
         <div class="col-lg-9 col-md-9">
 
-            <!-- 공통으로 가져가는 메뉴바  -->
-            <div class="header__nav">
-                <nav class="header__menu mobile-menu">
-                    <ul>
-
-
-                        <li><a href="#">일정플래너</a>
-
-                            <ul class="dropdown">
-                                <li><a href="./about.html">마음대로일정</a></li>
-                                <li><a href="./listing-details.html">추천일정</a></li>
-                                <li><a href="./blog-details.html">일정보관함</a></li>
-
+                    <!-- 공통으로 가져가는 메뉴바  -->
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                    
+                    
+                                <li><a href="#">일정플래너</a>
+                    
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">마음대로일정</a></li>
+                                        <li><a href="./listing-details.html">추천일정</a></li>
+                                        <li><a href="./blog-details.html">일정보관함</a></li>
+                    
+                                    </ul>
+                                </li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="./blog.html">커뮤니티</a></li>
+                    
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="./blog.html">커뮤니티</a></li>
-
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
-                    </ul>
-                </nav>
-                <div class="header__menu__right">
-
-                </div>
-            </div>
-        </div>
-        <div id="mobile-menu-wrap"></div>
-    </div>
-</header>
-<!-- Header Section End -->
+                        </nav>
+                        <div class="header__menu__right">
+                    
+                        </div>
+                    </div>
+                    </div>
+                    <div id="mobile-menu-wrap"></div>
+                    </div>
+                    </header>
+                    <!-- 메뉴바 End -->
 
 
 <!-- 페이지 상단부  -->
@@ -101,7 +101,11 @@
 
                 <div class="listing__hero__text">
                     <h2>추천 일정</h2>
-                    <p> 테마와 위치 날짜를 선택해주세요.</p>
+                    <div class="breadcrumb__option">
+                        <a href="./index.html"><i class="fa fa-home"></i> 홈</a>
+                        <span>추천일정</span>
+                    </div>
+                    <p> 테마와 위치 날짜를 선택하시면 일정을 추천해 드립니다!</p>
                 </div>
             </div>
         </div>
@@ -110,24 +114,24 @@
 </div>
 </section>
 
-
-<!-- 테마선택란  체크박스 다중 선택 체크 안되게 수정해야됨 -->
 <section class="page-start">
-<!--메뉴바 같이 내려오는 시작점 -->
+    <!--메뉴바 같이 내려오는 시작점 -->
 
-<section class="most-search spad">
-  <!-- 테마선택란  체크박스 다중 선택 체크 안되게 수정해야됨 --> 
-  <section class="most-search spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>STEP 1</h2>
-                    <p>아래에서 원하시는 테마를 선택해주세요</p>
+    <section class="most-search spad">
+        <section class="most-search spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>STEP 1</h2>
+                            <p>아래에서 원하시는 테마를 선택해주세요</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-       
+
+
+                <!-- step1 form 시작점  -->
+            <form action="">
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
                         <div class="row">
@@ -139,12 +143,14 @@
                                     </div>
                                     <div class="listing__item__text">
                                         <div class="listing__item__text__inside">
-                                          <h4>연인과 함께</h4>
+                                            <h4>연인과 함께</h4>
                                             <div class="listing__item__text__rating">
-                                            <input type="checkbox" value="couple">
-                                     
-                                             <label for="">2인 추천</label>
-                                         
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios"
+                                                        id="optionsRadios1" value="option1">
+                                                    2인이상
+                                                </label>
+            
                                             </div>
                                         </div>
                                     </div>
@@ -158,16 +164,17 @@
                                     </div>
                                     <div class="listing__item__text">
                                         <div class="listing__item__text__inside">
-                                           <h4>가족과 함께</h4>
+                                            <h4>가족과 함께</h4>
                                             <div class="listing__item__text__rating">
-                                              <input type="checkbox" name="who_with" value="with_fam">
-                                                
-                                              <label>4인이상 추천</label>
-                            
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios"
+                                                        id="optionsRadios2" value="option2">
+                                                    4인이상
+                                                </label>
                                             </div>
-                                       
+            
                                         </div>
-                                      
+            
                                     </div>
                                 </div>
                             </div>
@@ -179,64 +186,88 @@
                                     </div>
                                     <div class="listing__item__text">
                                         <div class="listing__item__text__inside">
-                                           <h4>친구와 함께</h4>
+                                            <h4>친구와 함께</h4>
                                             <div class="listing__item__text__rating">
-                                            <input type="checkbox" name="who_with" value="with_bf">
-                                     
-                                                <label>3-4인 추천</label>
-                                   
-                                                
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios"
+                                                        id="optionsRadios3" value="option3">
+                                                    3인이상
+                                                </label>
+            
                                             </div>
-                                       
+            
                                         </div>
-                                      
+            
                                     </div>
                                 </div>
                             </div>
+            
+            </form>
 
 
-                <hr>
-                <br>
 
+                <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">
+                            <hr><br>
                             <h2>STEP 2</h2>
                             <p>아래에서 원하시는 날짜와 위치를 선택해주세요</p>
+                        
                         </div>
                     </div>
                 </div>
 
            
                     <div class="loca_1">
-                        <div class="dropdown">
+                        <!-- <div class="dropdown">
                             <h2>위치를 선택해주세요</h2>
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">위치를 선택해주세요</button>
+                                aria-haspopup="true" aria-expanded="false">클릭하셔서 위치를 선택해주세요</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" type="submit">홍대</a>
                                 <a class="dropdown-item" type="submit">신촌</a>
                                 <a class="dropdown-item" type="submit">연남동</a>
+                                <a class="dropdown-item" type="submit">연남동</a>
+                                <a class="dropdown-item" type="submit">연남동</a>
                             </div>
-                        </div>
-                    </div>  
-                                  
-               <div class="date_1">
-                <h2>날짜를 선택해주세요</h2>
-                <input type="text" id="startDate">
-                <button type="submit" class="btn btn-primary">확인</button>
-            </div>
-</section>
+                        </div> -->
 
-                <div class="result_1">
-                    <h3>선택하신 날짜는 8월 15일 입니다 </h3>
-                </div>
-                
-                <div class="total_btn">           
-                     <a href="./index.html"><button type="button" class="btn btn-primary">메인으로</button></a>
-                     <a href="./adminPlan_detail.html"><button type="button" class="btn btn-primary">다음으로</button></a>
-                 </div>
- 
+                        <h2>위치를 선택해주세요</h2>
+                        <select name="which" onchange="handleOnChange(this)">
+                            <option value="연남동">연남동</option>
+                            <option value="광화문">광화문</option>
+                            <option value="홍대">홍대</option>
+                            <option value="강남">강남</option>
+                        </select>
+                        <div id='result'></div>
+                        
+                        </div>
+                        
+                        
+                        <div class="date_1" id='result'>
+                            <h2>날짜를 선택해주세요</h2>
+                        
+                            <input type="text" name="date_choose" id="startDate">
+                        
+                            <button type="submit" class="btn btn-dark">확인</button>
+                        
+                        </div>
+                        </section>
+                        
+                        
+                        <div>
+                            <center>
+                                <h4>확인을 누른후 다음으로 클릭하셔서 일정을 추천 받으세요!</h4>
+                                <p> 인원에 따라 추가 금액이 발생 할 수 있습니다 </p>
+                            </center>
+                        
+                        </div>
+                        
+                        <div class="total_btn">
+                            <a href="./index.html"><button type="button" class="btn btn-dark">메인으로</button></a>
+                            <a href="./adminPlan_detail.html"><button type="button" class="btn btn-dark">다음으로</button></a>
+                        </div>
 
 <!-- 하단의 footer -->
 <footer class="footer">
@@ -322,33 +353,45 @@
 
 <!-- 자바스크립트 함수부분  -->
 
+<script>
 
+    // 위치 선택 출력 
+    function handleOnChange(e) {
+        // 선택된 데이터 가져오기
+        const value = e.value;
+
+        // 데이터 출력
+        document.getElementById('result').innerText
+            = value;
+    }
+</script>
 
 <script> // 달력 날짜 선택 
-$(function () {
-$('#startDate').datepicker({
-})
-})
+    $(function () {
+        $('#startDate').datepicker({
+        
+        })
+      
+    })
 </script>
 
 <script>
-$(function () {
-var $header = $('header'); //헤더를 변수에 넣기
-var $page = $('.page-start'); //색상이 변할 부분
-var $window = $(window);
-var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+    $(function () {
+        var $header = $('header'); //헤더를 변수에 넣기
+        var $page = $('.page-start'); //색상이 변할 부분
+        var $window = $(window);
+        var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
 
-$window.resize(function () { //반응형을 대비하여 리사이즈시 top값을 다시 계산
-    pageOffsetTop = $page.offset().top;
-});
+        $window.resize(function () { //반응형을 대비하여 리사이즈시 top값을 다시 계산
+            pageOffsetTop = $page.offset().top;
+        });
 
-$window.on('scroll', function () { //스크롤시
-    var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
-    $header.toggleClass('down', scrolled); //클래스 토글
-});
-});
+        $window.on('scroll', function () { //스크롤시
+            var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+            $header.toggleClass('down', scrolled); //클래스 토글
+        });
+    });
 
 </script>
-
 
 </html>
