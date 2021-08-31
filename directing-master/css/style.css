@@ -1949,28 +1949,7 @@ login
 
 
 
-/* 위치 */
-.loca_1{
-	float: left;
-	margin-left: 10%;
-	text-align: center;
-	border: 1px solid pink;
-	background-color: #D958A0;
-	padding: 5%;
-	border-radius: 2em;
-}
 
-/* 날짜 */
-.date_1{ 
-	float: right;
-	margin-right: 10%;
-	text-align: center;
-	border: 1px solid pink;
-	background-color: #D958A0;
-	padding: 5%;
-	border-radius: 2em;
-	
-}
 
 .result_1{
 	text-align: center;
@@ -2292,29 +2271,6 @@ login
 	border-radius: 2px;
 	padding: 13px 38px 12px;
 }
-
-
-/* 
-	adminPlan_detail
-*/
-
-.middle_main{
-
-	text-align: center;
-	align-items: center;
-}
-
-.start_1{
-	float: left;
-	padding-left: 20%;
-}
-.start_2{
-	float: right;
-	margin-right: 20%;
-}
-
-
-
 
 
 
