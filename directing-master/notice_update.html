@@ -1,15 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="description" content="Directing Template">
+<meta name="keywords" content="Directing, unica, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> 추천일정 </title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Css Styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/flaticon.css" type="text/css">
+<link rel="stylesheet" href="css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="css/barfiller.css" type="text/css">
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<!-- 제이쿼리 피커데이트 -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+<!--드롭다운-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+
+
 </head>
-<body>
-    <h1>새로운 공지사항을 업데이트하는페이지란다 </h1>
+
+<style>
+
+.notice_update_zone{
+    margin-left: 30%;   
   
+}
+
+/* 
+    .tn1{
+        margin-top: 10%;
+        margin-left: 30%;  
+    }
+
+    .notice_title{
+        width: 60%;
+        margin: 30%; 
+        text-align: center;
+        border-radius: 1.5em;
+    } */
+</style>
+
+
+
+
+
+<body>
+<!-- Page Preloder -->
+<div id="preloder">
+<div class="loader"></div>
+</div>
+
+<!-- Header Section Begin -->
+<header class="header">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3">
+            <div class="header__logo">
+                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+
+                    <!-- 공통으로 가져가는 메뉴바  -->
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                    
+                    
+                                <li><a href="#">일정플래너</a>
+                    
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">마음대로일정</a></li>
+                                        <li><a href="./listing-details.html">추천일정</a></li>
+                                        <li><a href="./blog-details.html">일정보관함</a></li>
+                    
+                                    </ul>
+                                </li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="./blog.html">커뮤니티</a></li>
+                    
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__menu__right">
+                    
+                        </div>
+                    </div>
+                    </div>
+                    <div id="mobile-menu-wrap"></div>
+                    </div>
+                    </header>
+                    <!-- 메뉴바 End -->
+
+
+<!-- 페이지 상단부  -->
+<!-- Listing Section Begin  -->
+<section class="listing-hero set-bg" data-setbg="img/breadcrumb/breadcrumb-blog2.gif">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="listing__hero__option">
+
+                <div class="listing__hero__text">
+                    <h2>공지사항</h2>
+                    <div class="breadcrumb__option">
+                        <a href="./index.html"><i class="fa fa-home"></i> 홈</a>
+                        <span>공지사항 수정 </span>
+                    </div>
+                    <p> 공지사항 수정 공간 </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="page-start">
+
+    <!--메뉴바 같이 내려오는 시작점 -->
+<!-- 
+
+
+    <form action="">
+        <div class="tn1">
+            <h1>공지사항</h1>
+       <label for="">제목 : </label> <input type="text" class="notice_title" placeholder="제목을 입력하세요">
+      </div>
+
+      <div class="txtArea1">
+        <input type="textarea" class="notice_content" placeholder="내용을 입력하세요 ">
+        <label for="">내용 :</label>
+        <textarea class="notice_content" name="notice_content" ></textarea>
+
+      </div>
+        <label for=""></label>
+
+    </form> -->
+
+
+
+<div class="notice_update_zone">
+    <div class="container">
+        
+
+        <div class="row">
+            <div class="col-md-8 mt-5">
+                <!-- <form method="post" th:object="${post}"> -->
+                    <h2>공지사항 수정 </h2>
+                    <div class="form-group">
+                        <label for="title">제목</label>
+                        <input type="text" id="title" placeholder="제목을 입력하세요" autocomplete="off" class="form-control"
+                               th:field="*{title}"/>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="content">내용 </label>
+                        <textarea type="text" rows="4" id="content" placeholder="내용을 입력하세요 " class="form-control"
+                                  th:field="*{content}" autocomplete="off"></textarea>
+                    </div>
+                    <button class="btn btn-dark">이전으로</button>
+                    <button class="btn btn-dark" type="submit" >등록</button> 
+                    <button class="btn btn-dark">취소</button>
+
+                  
+                   
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    
+</div>
+
+
+</section>
+
+
+
+<!-- 하단의 footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer__about">
+                    <div class="footer__about__logo">
+                        <a href="./index.html"><img src="img/logo_D_1.png" alt=""></a>
+                    </div>
+                    <p>어디갈까 고민될 때는 어디어디!! &#128150;<br>
+                        어디어디와 함께라면 지루한 일상도 특별하게
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-2 col-md-6">
+                <div class="footer__address">
+                    <ul>
+                        <li>
+                            <span>전화번호:</span>
+                            <p>(+12) 345-678-910</p>
+                        </li>
+                        <li>
+                            <span>이메일:</span>
+                            <p>info.colorlib@gmail .com</p>
+                        </li>
+                        <li>
+                            <span>주소:</span>
+                            <p>서울특별시 강남구<br> 테헤란로14길 6</p>
+                        </li>
+                        <li>
+                            <span>Connect Us:</span>
+                            <div class="footer__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-skype"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright">
+                    <div class="footer__copyright__text">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> img by pngtree, Korea
+                            tourism oranization <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                    <div class="footer__copyright__links">
+                        <a href="#">서비스 소개</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.barfiller.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
+<!-- 자바스크립트 함수부분  -->
+
+
+
+
+<script>
+
+    // 위치 선택 출력 
+    function handleOnChange(e) {
+        // 선택된 데이터 가져오기
+        const value = e.value;
+
+        // 데이터 출력
+        document.getElementById('result').innerText
+            = value;
+    }
+</script>
+
+<script> // 달력 날짜 선택 
+    $(function () {
+        $('#startDate').datepicker({
+        
+        })
+      
+    })
+</script>
+
+<script>
+    $(function () {
+        var $header = $('header'); //헤더를 변수에 넣기
+        var $page = $('.page-start'); //색상이 변할 부분
+        var $window = $(window);
+        var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+
+        $window.resize(function () { //반응형을 대비하여 리사이즈시 top값을 다시 계산
+            pageOffsetTop = $page.offset().top;
+        });
+
+        $window.on('scroll', function () { //스크롤시
+            var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+            $header.toggleClass('down', scrolled); //클래스 토글
+        });
+    });
+
+</script>
 
 </html>
