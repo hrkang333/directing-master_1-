@@ -4,13 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="css/style333.css" type="text/css">
-    <link rel="stylesheet" href="css/style444.css" type="text/css">
-    <link rel="stylesheet" href="css/style555.css" type="text/css">
+    <link rel="stylesheet" href="css/myInfo.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/style444.css" type="text/css"> -->
 
     <title>어디어디 - 회원가입 폼</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+  
+    <!-- Bootstrap CSS / form -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css"/>
+
+    <!-- 자세히 보기 -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
     <!-- dropdown -->
     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
@@ -36,207 +42,181 @@
 
 <body class="testbody">
     <div class="container">
+        <!------------------------ step ----------------------------------------->
         <div class="cover">
-<div class="stepwizard">
-    <div class="stepwizard-row setup-panel">
-        <div class="stepwizard-step">
-            <a href="#step-1" type="button" class="btn btn-info btn-circle">1</a>
-            <p>Step 1</p>
+          <div class="stepwizard">
+              <div class="stepwizard-row setup-panel">
+                  <div class="stepwizard-step">
+                      <a href="#step-1" type="button" class="btn btn-info btn-circle">1</a>
+                      <p>Step 1</p>
+                  </div>
+                  <div class="stepwizard-step">
+                      <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                      <p>Step 2</p>
+                  </div>
+                  <div class="stepwizard-step">
+                      <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                      <p>Step 3</p>
+                  </div>
+              </div>
+          </div>
         </div>
-        <div class="stepwizard-step">
-            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-            <p>Step 2</p>
-        </div>
-        <div class="stepwizard-step">
-            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-            <p>Step 3</p>
-        </div>
-    </div>
-</div>
-</div>
-<form role="form">
-    <div class="row setup-content" id="step-1">
-        <div class="col-xs-12">
-            <div class="col-md-12">
-                <h2 class="tt">어디어디 회원가입<br>서비스 약관 동의????</h2>
 
-                <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-                <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-                <!------ Include the above in your HEAD tag ---------->
-                
-                <div class="container">
-                    <div class="row" style="display: contents;">
-                        <div class="col-md-4" style="margin-left: 10%; max-width: 80%;">
-                              <div class="thumbnail">
-                                <img src="http://tech.firstpost.com/wp-content/uploads/2014/09/Apple_iPhone6_Reuters.jpg" alt="" class="img-responsive">
-                                <div class="caption">
-                                  <h4 class="pull-right">$700.99</h4>
-                                  <h4><a href="#">Mobile Product</a></h4>
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                                <div class="space-ten"></div>
-                                <div class="btn-ground text-center">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
-                                </div>
-                                <div class="space-ten"></div>
-                              </div>
+
+        <!------------------------ step 1 ----------------------------------------->
+        <form role="form">
+            <div class="row setup-content" id="step-1">
+                <div class="col-xs-12">
+                    <div class="col-md-12">
+                        <h2 class="tt">어디어디 회원가입<br>서비스 약관 동의</h2>
+                        <br><br>
+                        
+                        <div class="container">
+                            <div class="row" style="display: contents;">
+                                <div class="col-md-4 mycustom">
+                                      <div class="thumbnail">
+                                          <div class="caption">
+                                            <input type="checkbox" class="checkbox" name="eodi" value="eodi">
+                                            <h4 class="tname">[필수] 어디어디 이용 약관</h4>
+                                            <button type="button" class="btn btn-info more" data-toggle="modal" data-target="#no1">
+                                              <i class="fa fa-search"></i> 자세히 보기
+                                            </button>
+                                          </div>
+                                      </div>
+                                      <div class="thumbnail">
+                                          <div class="caption">
+                                            <input type="checkbox" class="checkbox" name="eodi" value="eodi">
+                                            <h4 class="tname">[필수] 만 14세 이상입니다.</h4>
+                                            <button type="button" class="btn btn-info more" data-toggle="modal" data-target="#no2">
+                                              <i class="fa fa-search"></i> 자세히 보기
+                                            </button>
+                                          </div>
+                                      </div>
+                                      <div class="thumbnail">
+                                          <div class="caption">
+                                            <input type="checkbox" class="checkbox" name="eodi" value="eodi">
+                                            <h4 class="tname">[필수] 개인정보 수집 및 이용 동의</h4>
+                                            <button type="button" class="btn btn-info more" data-toggle="modal" data-target="#no3">
+                                              <i class="fa fa-search"></i> 자세히 보기
+                                            </button>
+                                          </div>
+                                      </div>
+                                  </div>
                             </div>
-                    </div>
-                </div>
-                <div class="modal fade product_view" id="product_view" style="margin-left: 10%; width: 80%; max-height: 400px; padding-bottom: 30%;">
-                    <div class="modal-dialog">
-                        <div class="modal-content" style="height: 100%;">
-                            <div class="modal-header">
-                                <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
-                                <h3 class="modal-title">HTML5 is a markup language</h3>
-                            </div>
-                            <div class="modal-body" style="height: 300px; margin-bottom: 5%;">
-                                <div class="row" style="display: contents;">
-                                    <div class="col-md-6 product_content" style="max-width: 100%;">
-                                        <h4>Product Id: <span>51526</span></h4>
-                                        <div class="rating">
-                                            <span class="glyphicon glyphicon-star"></span>
-                                            <span class="glyphicon glyphicon-star"></span>
-                                            <span class="glyphicon glyphicon-star"></span>
-                                            <span class="glyphicon glyphicon-star"></span>
-                                            <span class="glyphicon glyphicon-star"></span>
-                                            (10 reviews)
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> 75.00 <small class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 60.00</small></h3>
-                                        
-                                        <div class="space-ten"></div>
-                                        <div class="btn-ground">
-                                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
-                                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-heart"></span> Add To Wishlist</button>
+                        </div>
+                        <div class="modal fade product_view" id="no1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">어디어디 이용 약관</h3>
+                                        <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row" style="display: contents;">
+                                            <div class="col-md-6 product_content">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                <div class="space-ten"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade product_view" id="no2">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h3 class="modal-title">나이 정보 제공 및 수집</h3>
+                                      <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row" style="display: contents;">
+                                          <div class="col-md-6 product_content">
+                                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                              <div class="space-ten"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      <div class="modal fade product_view" id="no3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">개인정보 수집 및 이용 동의</h3>
+                                    <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row" style="display: contents;">
+                                        <div class="col-md-6 product_content">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <div class="space-ten"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
+
+                        <button class="nextBtn btn-ms pull-right" type="button">다음</button>
+                  </div>
+            </div>
+        </form>
+
+        <!------------------------ step 2 ----------------------------------------->
+        <div class="row setup-content" id="step-2">
+            <div class="col-xs-12">
+                <div class="col-md-12">
+                    <h2 style="text-align: center;">정보 입력</h2>
+                    <br><br>
+                    <form>
+                      <div class="form-group">
+                              <label class="control-label">아이디</label>
+                              <input maxlength="100" type="text" required="required" class="form-control" placeholder="이름을 입력하세요"  />
+                          <!-- </div>
+                          <div class="form-group"> -->
+                            <label class="control-label">비밀번호</label>
+                            <input maxlength="100" type="password" required="required" class="form-control" placeholder="비밀번호를 입력해주세요" />
+                            <label class="control-label">비밀번호 확인</label>
+                            <input maxlength="100" type="password" required="required" class="form-control" placeholder="비밀번호를 입력해주세요" />
+
+                            
+                            <label class="control-label">이메일</label>
+                            <input maxlength="100" type="email" required="required" class="form-control" placeholder="이메일을 입력해주세요" />
+                            <label class="control-label">이름</label>
+                            <input maxlength="100" type="text" required="required" class="form-control" placeholder="이름을 입력해주세요" />
+                            <label class="control-label">전화번호</label>
+                            <input maxlength="100" type="tel" required="required" class="form-control" placeholder="전화번호를 입력해주세요(010-XXXX-XXXX)" />
+                            <label class="control-label">성별</label><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="gener" checked="checked" /> <span class="up">여자</span>&nbsp;&nbsp; <input type="radio" name="gener"/> <span class="up">남자</span>
+                            <br><br>
+                      </div>
+                      <button class="prevBtn btn-ms pull-left" type="button">이전</button>
+                      <button class="nextBtn btn-ms pull-right" type="submit">다음</button>
+                    </form>
                 </div>
-
-
-                <button class="nextBtn btn-ms pull-right" type="button">다음</button>
+            </div>
+        </div>
+        <!------------------------ step 3 ----------------------------------------->
+        <div class="row setup-content" id="step-3">
+            <div class="col-xs-12">
+                <div class="col-md-12">
+                    <h2 style="text-align: center;">회원가입 완료!</h2><br>
+                    <h4 style="text-align: center;">로그인 화면으로 이동합니다</h4>
+                    <br><br>
+                    <center><button class="btn-success finish btn-lg" type="button">확인</button></center>
+                </div>
             </div>
         </div>
     </div>
+</body>
 
+<!-- form js -->
 
-
-
-
-    <div class="row setup-content" id="step-2">
-        <div class="col-xs-12">
-            <div class="col-md-12">
-                <h3> Step 1</h3>
-                <div class="form-group">
-                    <label class="control-label">First Name</label>
-                    <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
-                </div>
-                <div class="form-group">
-                    <label class="control-label">Last Name</label>
-                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
-                </div>
-                <h3> Step 2</h3>
-                <!-- Bootstrap CSS --> <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css"/>
-    <form>
-   <div class="form-row">
-     <div class="col-md-4 mb-3">
-       <label for="validationServer013">First name</label>
-       <input type="text" class="form-control is-valid" id="validationServer013" placeholder="First name"
-         value="Mark" required>
-       <div class="valid-feedback">
-         Looks good!
-       </div>
-     </div>
-     <div class="col-md-4 mb-3">
-       <label for="validationServer023">Last name</label>
-       <input type="text" class="form-control is-valid" id="validationServer023" placeholder="Last name"
-         value="Otto" required>
-       <div class="valid-feedback">
-         Looks good!
-       </div>
-     </div>
-     <div class="col-md-4 mb-3">
-       <label for="validationServerUsername33">Username</label>
-       <div class="input-group">
-         <div class="input-group-prepend">
-           <span class="input-group-text" id="inputGroupPrepend33">@</span>
-         </div>
-         <input type="text" class="form-control is-invalid" id="validationServerUsername33" placeholder="Username"
-           aria-describedby="inputGroupPrepend33" required>
-         <div class="invalid-feedback">
-           Please choose a username.
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class="form-row">
-     <div class="col-md-6 mb-3">
-       <label for="validationServer033">City</label>
-       <input type="text" class="form-control is-invalid" id="validationServer033" placeholder="City"
-         required>
-       <div class="invalid-feedback">
-         Please provide a valid city.
-       </div>
-     </div>
-     <div class="col-md-3 mb-3">
-       <label for="validationServer043">State</label>
-       <input type="text" class="form-control is-invalid" id="validationServer043" placeholder="State"
-         required>
-       <div class="invalid-feedback">
-         Please provide a valid state.
-       </div>
-     </div>
-     <div class="col-md-3 mb-3">
-       <label for="validationServer053">Zip</label>
-       <input type="text" class="form-control is-invalid" id="validationServer053" placeholder="Zip"
-         required>
-       <div class="invalid-feedback">
-         Please provide a valid zip.
-       </div>
-     </div>
-   </div>
-   <div class="form-group">
-     <div class="custom-control custom-checkbox">
-       <input type="checkbox" class="custom-control-input is-invalid" id="invalidCheck33" required>
-       <label class="custom-control-label" for="invalidCheck33">Agree to terms and conditions</label>
-       <div class="invalid-feedback">
-         You must agree before submitting.
-       </div>
-     </div>
-     <div class="invalid-feedback">
-       You must agree before submitting.
-     </div>
-   </div>
-   <button class="btn btn-primary" type="submit">Submit form</button>
- </form></div>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
-     <!-- Optional JavaScript -->
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-                <button class="nextBtn btn-lg pull-right" type="button" >Next</button>
-                <button class="prevBtn btn-lg pull-right" type="button" >이전</button>
-            </div>
-        </div>
-    </div>
-    <div class="row setup-content" id="step-3">
-        <div class="col-xs-12">
-            <div class="col-md-12">
-                <h3> Step 3</h3>
-                <button class="btn btn-success finish btn-lg pull-right" type="submit">성공</button>
-            </div>
-        </div>
-    </div>
-</form>
-</div>	<script type="text/javascript">
+<script type="text/javascript">
 	$(document).ready(function () {
 
     var navListItems = $('div.setup-panel div a'),
@@ -299,6 +279,5 @@
     $('div.setup-panel div a.btn-info').trigger('click');
     ;})
 	</script>
-</body>
 </html>
     
