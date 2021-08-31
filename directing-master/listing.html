@@ -87,13 +87,12 @@
                             <ul>
                 
                 
-                                <li><a href="#">일정플래너</a>
+                                <li><a href="./selectPlan.html">일정플래너</a>
                 
                                     <ul class="dropdown">
-                                        <li><a href="./about.html">마음대로일정</a></li>
+                                        <li><a href="./listing.html">마음대로일정</a></li>
                                         <li><a href="./listing-details.html">추천일정</a></li>
-                                        <li><a href="./blog-details.html">일정보관함</a></li>
-                
+                                        <li><a href="./planSave.html">일정보관함</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">FAQ</a></li>
@@ -186,17 +185,17 @@
                 </thead>
                 <tr>
 					<td>뚱이네 고기</td>
-					<td>홍대에 있는 가성비좋고 맛도 좋은 고기집</td>
+					<td>서울시 홍대 어딘가 11-1번지</td>
 					<td><button onClick="rowDelete(this)">빼기</button></td>
 				</tr>
                 <tr>
 					<td>뚱이네 고기</td>
-					<td>홍대에 있는 가성비좋고 맛도 좋은 고기집</td>
+					<td>서울시 홍대 어딘가 11-1번지</td>
 					<td><button onClick="rowDelete(this)">빼기</button></td>
 				</tr>
                 <tr>
 					<td>뚱이네 고기</td>
-					<td>홍대에 있는 가성비좋고 맛도 좋은 고기집</td>
+					<td>서울시 홍대 어딘가 11-1번지</td>
 					<td><button onClick="rowDelete(this)">빼기</button></td>
 				</tr>
             </table>
@@ -235,7 +234,7 @@
                         </div>
                     </td>
                     <td>장소 명</td>
-                    <td><button>돋</button></td>
+                    <td><button onclick="newPage()">돋</button></td>
                     <td><button>+</button></td>
                 </tr>
                 <tr>
@@ -253,7 +252,7 @@
                         </div>
                     </td>
                     <td>장소 명</td>
-                    <td><button>돋</button></td>
+                    <td><button onclick="newPage()">돋</button></td>
                     <td><button>+</button></td>
                 </tr>
                 <tr>
@@ -281,6 +280,10 @@
             $('#startDate').datepicker({
              })
         })
+
+        function newPage()  {
+            window.open('./placeDetail.html');
+        }
     </script>
 
 

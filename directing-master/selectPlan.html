@@ -24,8 +24,112 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/style22.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/style22.css" type="text/css"> -->
 
+    <style>
+        .categories-area .single-cat {
+            border: 1px solid #e1ebf7;
+            border-radius: 6px;
+            padding: 61px 22px;
+            -webkit-transition: all .4s ease-out 0s;
+            -moz-transition: all .4s ease-out 0s;
+            -ms-transition: all .4s ease-out 0s;
+            -o-transition: all .4s ease-out 0s;
+            transition: all .4s ease-out 0s;
+            position: relative;
+            z-index: 1
+        }
+        
+        .categories-area .single-cat::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            background: #D958A0;
+            transition: .6s;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 6px
+        }
+        
+        .categories-area .single-cat .cat-icon span {
+            color: #eb566c;
+            font-size: 50px;
+            margin-bottom: 30px;
+            display: block
+        }
+        
+        .categories-area .single-cat .cat-cap h5>a {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 21px;
+            display: block;
+            -webkit-transition: all .2s ease-out 0s;
+            -moz-transition: all .2s ease-out 0s;
+            -ms-transition: all .2s ease-out 0s;
+            -o-transition: all .2s ease-out 0s;
+            transition: all .2s ease-out 0s
+        }
+        
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            .categories-area .single-cat .cat-cap h5>a {
+                font-size: 29px
+            }
+        }
+        
+        .categories-area .single-cat .cat-cap p {
+            margin-bottom: 36px;
+            color: #57667e;
+            font-size: 16px;
+            -webkit-transition: all .2s ease-out 0s;
+            -moz-transition: all .2s ease-out 0s;
+            -ms-transition: all .2s ease-out 0s;
+            -o-transition: all .2s ease-out 0s;
+            transition: all .2s ease-out 0s
+        }
+        
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            .categories-area .single-cat .cat-cap p {
+                font-size: 15px
+            }
+        }
+        
+        .categories-area .single-cat .cat-cap a {
+            color: #1c165c;
+            font-size: 16px;
+            font-weight: 600;
+            -webkit-transition: all .2s ease-out 0s;
+            -moz-transition: all .2s ease-out 0s;
+            -ms-transition: all .2s ease-out 0s;
+            -o-transition: all .2s ease-out 0s;
+            transition: all .2s ease-out 0s
+        }
+        
+        .categories-area .single-cat:hover {
+            border: 1px solid transparent
+        }
+        
+        .categories-area .single-cat:hover::before {
+            height: 100%
+        }
+        
+        .categories-area .single-cat:hover .cat-icon span {
+            color: #fff
+        }
+        
+        .categories-area .single-cat:hover .cat-cap h5 {
+            color: #fff
+        }
+        
+        .categories-area .single-cat:hover .cat-cap p {
+            color: #fff
+        }
+        
+        .categories-area .single-cat:hover .cat-cap a {
+            color: #fff
+        }
+    </style>
 </head>
 
 <body>
@@ -47,31 +151,31 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                
-                
-                                <li><a href="#">일정플래너</a>
-                
+
+
+                                <li><a href="./selectPlan.html">일정플래너</a>
+
                                     <ul class="dropdown">
-                                        <li><a href="./about.html">마음대로일정</a></li>
+                                        <li><a href="./listing.html">마음대로일정</a></li>
                                         <li><a href="./listing-details.html">추천일정</a></li>
                                         <li><a href="./blog-details.html">일정보관함</a></li>
-                
+
                                     </ul>
                                 </li>
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="./blog.html">커뮤니티</a></li>
-                
+
                                 <li><a href="#">로그인</a></li>
                                 <li><a href="#">회원가입</a></li>
                             </ul>
                         </nav>
                         <div class="header__menu__right">
-                
+
                         </div>
                     </div>
                 </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
+                <div id="mobile-menu-wrap"></div>
+            </div>
     </header>
     <!-- Header Section End -->
 
@@ -95,7 +199,7 @@
 
     <!-- Work Section Begin -->
     <section class="page-start">
-    
+
     </section>
     <!-- Work Section End -->
 
@@ -117,7 +221,7 @@
                             <span class="flaticon-bed"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="#">내 맘대로 일정 계획</a></h5>
+                            <h5><a href="listing.html">내 맘대로 일정 계획</a></h5>
                             <p>사용자가 원하는 대로 일정을 계획할 수 있습니다</p>
                             <!-- <a href="#">View Details</a> -->
                         </div>
@@ -129,7 +233,7 @@
                             <span class="flaticon-drink"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="#">추천 일정</a></h5>
+                            <h5><a href="listing-details.html">추천 일정</a></h5>
                             <p>어디어디에서 추천해주는 일정으로 떠나보세요</p>
                             <!-- <a href="#">View Details</a> -->
                         </div>
@@ -149,189 +253,7 @@
                 </div>
             </div>
         </div>
-    
-
-    <!-- About Video Begin -->
-    <!-- <div class="about-video">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about__video set-bg" data-setbg="img/about-video.jpg">
-                        <a href="https://www.youtube.com/watch?v=8EJ3zbKTWQ8" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- About Video End -->
-
-    
-
-    <!-- Testimonial Section Begin -->
-    <!-- <section class="testimonial spad set-bg" data-setbg="img/testimonial/testimonial-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Trusted By Over 5000+ User</h2>
-                        <p>What people say about us</p>
-                    </div>
-                    <div class="testimonial__slider owl-carousel">
-                        <div class="testimonial__item" data-hash="review-1">
-                            <p>" We worked with Consultant. Our representative was very knowledgeable and helpful.
-                                Consultant made a number of suggestions to help improve our systems. Consultant
-                                explained how things work and why it would help."</p>
-                            <div class="testimonial__item__author">
-                                <a href="#review-3"><img src="img/testimonial/author-3.png" alt=""></a>
-                                <a href="#review-1" class="active"><img src="img/testimonial/author-1.png" alt=""></a>
-                                <a href="#review-2"><img src="img/testimonial/author-2.png" alt=""></a>
-                            </div>
-                            <div class="testimonial__item__author__text">
-                                <h5>John Smith -</h5>
-                                <div class="testimonial__item__author__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                            <span>CEO Colorlib</span>
-                        </div>
-                        <div class="testimonial__item" data-hash="review-2">
-                            <p>" We worked with Consultant. Our representative was very knowledgeable and helpful.
-                                Consultant made a number of suggestions to help improve our systems. Consultant
-                                explained how things work and why it would help."</p>
-                            <div class="testimonial__item__author">
-                                <a href="#review-1"><img src="img/testimonial/author-1.png" alt=""></a>
-                                <a href="#review-2" class="active"><img src="img/testimonial/author-2.png" alt=""></a>
-                                <a href="#review-3"><img src="img/testimonial/author-3.png" alt=""></a>
-                            </div>
-                            <div class="testimonial__item__author__text">
-                                <h5>John Smith -</h5>
-                                <div class="testimonial__item__author__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                            <span>CEO Colorlib</span>
-                        </div>
-                        <div class="testimonial__item" data-hash="review-3">
-                            <p>" We worked with Consultant. Our representative was very knowledgeable and helpful.
-                                Consultant made a number of suggestions to help improve our systems. Consultant
-                                explained how things work and why it would help."</p>
-                            <div class="testimonial__item__author">
-                                <a href="#review-2"><img src="img/testimonial/author-2.png" alt=""></a>
-                                <a href="#review-3" class="active"><img src="img/testimonial/author-3.png" alt=""></a>
-                                <a href="#review-1"><img src="img/testimonial/author-1.png" alt=""></a>
-                            </div>
-                            <div class="testimonial__item__author__text">
-                                <h5>John Smith -</h5>
-                                <div class="testimonial__item__author__rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                            <span>CEO Colorlib</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Testimonial Section End -->
-
-    <!-- Team Section Begin -->
-    <!-- <section class="team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Our Specialist Team</h2>
-                        <p>Travelocity empowers travelers who are giving back on their trips in ways big and small</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team__item">
-                        <img src="img/team/team-1.jpg" alt="">
-                        <span>DEVELOPER</span>
-                        <h5>John Smith</h5>
-                        <div class="team__item__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team__item">
-                        <img src="img/team/team-2.jpg" alt="">
-                        <span>DEVELOPER</span>
-                        <h5>Garry Toth</h5>
-                        <div class="team__item__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team__item">
-                        <img src="img/team/team-3.jpg" alt="">
-                        <span>DEVELOPER</span>
-                        <h5>Mary Jean</h5>
-                        <div class="team__item__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team__item">
-                        <img src="img/team/team-4.jpg" alt="">
-                        <span>DEVELOPER</span>
-                        <h5>Adam Smith</h5>
-                        <div class="team__item__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Team Section End -->
-
-    <!-- Newslatter Section Begin -->
-    <!-- <section class="newslatter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="newslatter__text">
-                        <h3>Subscribe Newsletter</h3>
-                        <p>Subscribe to our newsletter and don’t miss anything</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form action="#" class="newslatter__form">
-                        <input type="text" placeholder="Your email">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Newslatter Section End -->
+    </div>
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -342,8 +264,7 @@
                         <div class="footer__about__logo">
                             <a href="./index.html"><img src="img/logo_D_1.png" alt=""></a>
                         </div>
-                        <p>어디갈까 고민될 때는 어디어디!! &#128150;<br>
-                        어디어디와 함께라면 지루한 일상도 특별하게
+                        <p>어디갈까 고민될 때는 어디어디!! &#128150;<br> 어디어디와 함께라면 지루한 일상도 특별하게
 
                         </p>
                     </div>
@@ -375,14 +296,20 @@
                         </ul>
                     </div>
                 </div>
-              
+
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> img by pngtree, Korea tourism oranization <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <div class="footer__copyright__text">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> img by pngtree, Korea tourism oranization <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
                         </div>
                         <div class="footer__copyright__links">
                             <a href="#">서비스 소개</a>
@@ -410,22 +337,21 @@
 </body>
 
 <script>
-    $(function(){
-    var $header = $('header'); //헤더를 변수에 넣기
-    var $page = $('.page-start'); //색상이 변할 부분
-    var $window = $(window);
-    var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
-    
-    $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
-        pageOffsetTop = $page.offset().top;
+    $(function() {
+        var $header = $('header'); //헤더를 변수에 넣기
+        var $page = $('.page-start'); //색상이 변할 부분
+        var $window = $(window);
+        var pageOffsetTop = $page.offset().top; //색상 변할 부분의 top값 구하기
+
+        $window.resize(function() { //반응형을 대비하여 리사이즈시 top값을 다시 계산
+            pageOffsetTop = $page.offset().top;
+        });
+
+        $window.on('scroll', function() { //스크롤시
+            var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+            $header.toggleClass('down', scrolled); //클래스 토글
+        });
     });
-    
-    $window.on('scroll', function(){ //스크롤시
-        var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
-        $header.toggleClass('down', scrolled); //클래스 토글
-    });
-    });
-    
 </script>
 
 </html>
